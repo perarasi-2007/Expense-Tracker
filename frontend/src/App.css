@@ -1,0 +1,312 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f5fb;
+  color: #24213b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  height: 75px;
+  background: white;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eeeaf5;
+}
+
+.brand {
+  font-size: 23px;
+  font-weight: 750;
+  color: #7045c6;
+}
+
+.header-label {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #88829b;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 45px auto;
+  padding: 0 25px;
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  color: #8057d5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.welcome h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #88839a;
+  font-size: 15px;
+}
+
+.total-card {
+  background: linear-gradient(135deg, #7951d1, #a17be9);
+  color: white;
+  padding: 25px 30px;
+  border-radius: 18px;
+  min-width: 240px;
+  box-shadow: 0 10px 25px rgba(112, 69, 198, 0.15);
+}
+
+.total-card p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.total-card h2 {
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.total-card span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.5fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.panel {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  border: 1px solid #eeebf5;
+  box-shadow: 0 5px 20px rgba(45, 30, 80, 0.04);
+}
+
+.panel h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.panel-subtitle {
+  color: #9690a5;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 13px;
+  font-weight: 650;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+form input,
+form select,
+.list-heading select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e6e2ef;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #38334c;
+  font-size: 14px;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #8057d5;
+  box-shadow: 0 0 0 3px rgba(128, 87, 213, 0.1);
+}
+
+.submit-btn {
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #7951d1;
+  color: white;
+  font-size: 15px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #623bb5;
+}
+
+.cancel-btn {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid #ddd5eb;
+  background: white;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.list-heading select {
+  width: auto;
+  max-width: 150px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 65px 10px;
+}
+
+.empty-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  display: grid;
+  place-items: center;
+  background: #f0eafa;
+  color: #7951d1;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.empty-state h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: #9993a8;
+  font-size: 13px;
+}
+
+.expense-list {
+  margin-top: 15px;
+}
+
+.expense-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid #f0edf5;
+}
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.expense-info strong {
+  font-size: 14px;
+}
+
+.expense-info span {
+  font-size: 12px;
+  color: #9993a8;
+}
+
+.expense-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.expense-actions strong {
+  font-size: 14px;
+}
+
+.expense-actions button {
+  border: none;
+  background: #f1ebfb;
+  color: #7045c6;
+  padding: 7px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.expense-actions button:last-child {
+  background: #fff0f0;
+  color: #d34b4b;
+}
+
+@media (max-width: 800px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .total-card {
+    width: 100%;
+  }
+
+  .header {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome h1 {
+    font-size: 27px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+
+  .expense-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .expense-actions {
+    flex-wrap: wrap;
+  }
+
+  .list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
